@@ -43,7 +43,7 @@ def create_ticket(request):
             
         return Response({
             "status": "success",
-            "ticket_id": ticket.ticket_id,
+            "ticket_code": ticket.ticket_code,
             "message": message
         })
         return Response(serializer.errors, status=400)
